@@ -69,5 +69,18 @@ public class Main {
 
         SinglyLinkedList.printCircularLinkedList(circularLinkedListNode1);
 
+
+        System.out.println("\n----------------------------------------------\n");
+        System.out.println("ArrayStack:\n");
+
+        ArrayStack arrayStack = new ArrayStack(3);
+        arrayStack.push(1);
+        arrayStack.push(2);
+        arrayStack.push(3);
+        arrayStack.push(4);
+
+        for (int i = 0; i < arrayStack.array.length; i++) {
+            System.out.print(arrayStack.array[i] + " ");
+        }
     }
 }
