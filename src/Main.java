@@ -2,7 +2,6 @@ public class Main {
     public static void main(String[] args) {
 
         // SinglyLinkedList test:
-
         System.out.println("SinglyLinkedList:\n");
 
         SinglyLinkedList node = new SinglyLinkedList(1);
@@ -77,10 +76,20 @@ public class Main {
         arrayStack.push(1);
         arrayStack.push(2);
         arrayStack.push(3);
-        arrayStack.push(4);
 
-        for (int i = 0; i < arrayStack.array.length; i++) {
-            System.out.print(arrayStack.array[i] + " ");
-        }
+        arrayStack.print();
+
+        // exceeds stack limit
+        arrayStack.push(4);
+        System.out.println(arrayStack.peek());
+        System.out.println();
+
+        ArrayStack arrayStack2= new ArrayStack(3);
+        arrayStack2.push(1);
+        arrayStack2.push(2);
+        arrayStack2.push(3);
+        arrayStack2.pop();
+        arrayStack2.print();
+
     }
 }
