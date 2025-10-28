@@ -40,4 +40,11 @@ public class ArrayStack {
         return array[top];
     }
 
+    int search(int value) {
+        for (int i = top, positionFromTop = 1; i >= 0; i--, positionFromTop++) {
+            if (array[i] == value) return positionFromTop;
+        }
+        return -1;
+    }
+
 }

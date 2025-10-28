@@ -77,6 +77,8 @@ public class Main {
         arrayStack.push(2);
         arrayStack.push(3);
 
+        System.out.println("top index: " + arrayStack.search(3));
+
         arrayStack.print();
 
         // exceeds stack limit
