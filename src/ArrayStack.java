@@ -12,8 +12,8 @@ public class ArrayStack {
     }
 
     void print() {
-        for (int i = 0; i <= this.top; i++) {
-            System.out.print(this.array[i] + " ");
+        for (int i = this.array.length -1; i > -1; i--) {
+            System.out.println(this.array[i]);
         }
     }
 
@@ -45,6 +45,11 @@ public class ArrayStack {
             if (array[i] == value) return positionFromTop;
         }
         return -1;
+    }
+
+    int get(int index) {
+        int i = (this.array.length - index);
+        return this.array[i];
     }
 
 }

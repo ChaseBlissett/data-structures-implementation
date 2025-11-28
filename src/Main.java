@@ -77,21 +77,15 @@ public class Main {
         arrayStack.push(2);
         arrayStack.push(3);
 
-        System.out.println("top index: " + arrayStack.search(3));
-
         arrayStack.print();
 
-        // exceeds stack limit
-        arrayStack.push(4);
-        System.out.println(arrayStack.peek());
+        System.out.println("element at index 2: " + arrayStack.get(2));
+
+        System.out.print("This will be a stack overflow: ");
+        arrayStack.push(5);
         System.out.println();
 
-        ArrayStack arrayStack2= new ArrayStack(3);
-        arrayStack2.push(1);
-        arrayStack2.push(2);
-        arrayStack2.push(3);
-        arrayStack2.pop();
-        arrayStack2.print();
-
+        System.out.println("Top element: " + arrayStack.peek());
+        System.out.printf("Position from top of one: " + arrayStack.search(1));
     }
 }
