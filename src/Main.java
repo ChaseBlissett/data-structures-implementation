@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -69,7 +74,7 @@ public class Main {
         SinglyLinkedList.printCircularLinkedList(circularLinkedListNode1);
 
 
-        System.out.println("\n----------------------------------------------\n");
+        System.out.println("\n----------------------------------------------");
         System.out.println("ArrayStack:\n");
 
         ArrayStack arrayStack = new ArrayStack(3);
@@ -87,5 +92,25 @@ public class Main {
 
         System.out.println("Top element: " + arrayStack.peek());
         System.out.printf("Position from top of one: " + arrayStack.search(1));
+
+        System.out.println("\n----------------------------------------------");
+        System.out.println("ArrayMap:\n");
+
+        ArrayMap map = new ArrayMap();
+        map.put(0, 0);
+        map.put(5, 10);
+        map.print();
+        System.out.println(map.values());
+        System.out.println(map.keySet());
+        System.out.println(map.get(5));
+        System.out.println(map.containsKey(3));
+        System.out.println(map.containsValue(3));
+
+        Map<Integer, Integer> nums = new HashMap<>();
+        nums.put(1, 2);
+        nums.put(2, 3);
+        nums.put(3, 4);
+        System.out.println(nums.entrySet());
+
     }
 }
