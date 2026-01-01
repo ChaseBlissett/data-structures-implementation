@@ -1,3 +1,5 @@
+package ArrayStack;
+
 public class ArrayStack {
 
     int[] array;
@@ -26,7 +28,7 @@ public class ArrayStack {
     }
     void pop() {
         if (top == -1) {
-            System.out.println("Stack underflow: ArrayStack is already empty");
+            System.out.println("Stack underflow: ArrayStack.ArrayStack is already empty");
             return;
         }
         top --;
@@ -34,7 +36,7 @@ public class ArrayStack {
 
     int peek() {
         if (top == -1) {
-            System.out.println("Stack underflow: ArrayStack is already empty");
+            System.out.println("Stack underflow: ArrayStack.ArrayStack is already empty");
             return -1;
         }
         return array[top];

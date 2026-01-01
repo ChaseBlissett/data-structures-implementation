@@ -1,3 +1,5 @@
+package ArrayMap;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -24,7 +26,7 @@ public class ArrayMap {
     public void print() {
         // Use String Builder to build and format
         // a String that resembles a HashMap for the
-        // ArrayMap object.
+        // ArrayMap.ArrayMap object.
 
         StringBuilder sb = new StringBuilder("[");
         for (int i = 0; i < array.size(); i++) {

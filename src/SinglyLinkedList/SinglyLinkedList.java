@@ -1,3 +1,5 @@
+package SinglyLinkedList;
+
 public class SinglyLinkedList {
     int value;
     SinglyLinkedList next;

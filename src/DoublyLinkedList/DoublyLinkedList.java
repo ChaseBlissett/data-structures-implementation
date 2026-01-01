@@ -1,3 +1,5 @@
+package DoublyLinkedList;
+
 public class DoublyLinkedList {
     int value;
     DoublyLinkedList next;
@@ -8,7 +10,7 @@ public class DoublyLinkedList {
         this.next = null;
     }
     static void print(DoublyLinkedList node) {
-        if (node == null) System.out.println("Node is null");
+        if (node == null) System.out.println("ArrayMap.Node is null");
         while (node != null) {
             System.out.print(node.value + " ");
             node = node.next;
