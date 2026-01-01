@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         // SinglyLinkedList.SinglyLinkedList test:
-        System.out.println("SinglyLinkedList.SinglyLinkedList:\n");
+        System.out.println("\nSinglyLinkedList:");
 
         SinglyLinkedList node = new SinglyLinkedList(1);
         node.next = new SinglyLinkedList(2);

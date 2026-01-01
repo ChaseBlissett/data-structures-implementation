@@ -17,6 +17,7 @@ public class CircularLinkedListMain {
         circularLinkedListNode5.next = circularLinkedListNode6;
         circularLinkedListNode6.next = circularLinkedListNode1;
 
+        // There needs to be its own logic so this doesn't print forever
         SinglyLinkedList.printCircularLinkedList(circularLinkedListNode1);
     }
 }

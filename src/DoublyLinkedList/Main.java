@@ -14,9 +14,9 @@ public class Main {
 
         node3.prev = node2;
 
-        System.out.println("Forwards:");
+        System.out.println("Doubly Linked List printed Forwards:");
         DoublyLinkedList.print(node1);
-        System.out.println("\nBackwards:");
+        System.out.println("\nDoubly Linked List printed Backwards:");
         DoublyLinkedList.printBackwards(node3);
 
         System.out.println("\n----------------------------------------------\n");
